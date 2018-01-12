@@ -6,15 +6,6 @@ angular.module('app').config(function ($stateProvider) {
         templateProvider: function (app) {
             return app.templateProvider('app');
         }
-    }).state('app.howto', {
-        views: {
-            app: {
-                controller: 'app_howto',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.howto');
-                }
-            }
-        }
     }).state('app.infinitescroll', {
         views: {
             app: {

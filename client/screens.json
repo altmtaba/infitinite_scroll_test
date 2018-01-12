@@ -4,12 +4,6 @@
   "startScreen": "app.infinitescroll",
   "screens": [
     {
-      "id": "howto",
-      "name": "HowTo",
-      "sourceScreenId": "app.howto",
-      "sourceAppId": "InfiniteScroll"
-    },
-    {
       "id": "infinitescroll",
       "name": "InfiniteScroll",
       "sourceScreenId": "app.infinitescroll",
