@@ -1,0 +1,56 @@
+{
+  "searchresult": {
+    "type": "object",
+    "comment": "",
+    "properties": {
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "price": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "nextpage": {
+        "type": "action"
+  },
+      "issearch": {
+              "type": "string"
+      }
+    }
+  },
+  "searchdata": {
+    "type": "object",
+    "properties": {
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "price": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "nextpage": {
+        "type": "action"
+      }
+    }
+  }
+}

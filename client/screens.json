@@ -1,0 +1,22 @@
+{
+  "id": "app",
+  "name": "infitinite_scroll_test",
+  "startScreen": "app.infinitescroll",
+  "screens": [
+    {
+      "id": "howto",
+      "name": "HowTo",
+      "sourceScreenId": "app.howto",
+      "sourceAppId": "InfiniteScroll"
+    },
+    {
+      "id": "infinitescroll",
+      "name": "InfiniteScroll",
+      "sourceScreenId": "app.infinitescroll",
+      "sourceAppId": "InfiniteScroll",
+      "model": "searchdata"
+    }
+  ],
+  "sourceAppId": "InfiniteScroll",
+  "sourceScreenId": "app"
+}

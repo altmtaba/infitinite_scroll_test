@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "selectorAll": ".s-result-list-parent-container>ul>li",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "selector": ".s-access-detail-page",
+            "control": "property.innerText"
+          },
+          "price": {
+            "type": "string",
+            "selector": ".a-color-price",
+            "control": "property.innerText"
+          },
+          "image": {
+            "type": "string",
+            "selector": ".s-access-image",
+            "control": "attrib.src"
+          }
+        }
+      }
+    },
+    "nextpage": {
+      "type": "action",
+      "selector": "#pagnNextString",
+      "control": "action.link"
+    },
+    "issearch": {
+      "type": "identifier",
+      "selector": "span.nav-a-content",
+      "control": "exists",
+      "selectContains": "Electronics"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "issearch"
+      ],
+      "screens": [
+        "infinitescroll"
+      ]
+    }
+  ]
+}

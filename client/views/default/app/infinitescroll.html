@@ -1,0 +1,30 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-navicon" data-comp-id="button.1"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">List View</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon ion-home" data-comp-id="button.2"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content data-comp-id="ionic-content.1" scroll="false" there-is-more="">
+        <ion-scroll delegate-handle="scroller" direction="y" on-scroll="checkScroll()"
+            style="width: 100%; height: 100%">
+            <div class="item item-icon-right" data-comp-id="item.1"
+                ng-repeat="item in data.results track by $index" style="padding: 0px 5px;">
+                <div class="row" data-comp-id="row.1">
+                    <div class="col" data-comp-id="column.1">
+                        <div class="" data-comp-id="text.1" ng-bind="item.name"
+                            style="font-size: 16px; margin: 3px 0px 6px; line-height: 20px; white-space: normal;">Price &amp; Availability</div>
+                        <div class=" balanced" data-comp-id="text.2" ng-bind="item.price"
+                            style="font-size: 18px; margin: 3px 0px 6px; line-height: 18px;">Price &amp; Availability</div>
+                    </div>
+                </div>
+                <div class="row" data-comp-id="row.2">
+                    <div class="col text-center" data-comp-id="column.2" style="padding: 0px;"><img ng-src="{{item.image}}" style="width: 60%"></div>
+                </div>
+            </div>
+        </ion-scroll>
+    </ion-content>
+</ion-view>
